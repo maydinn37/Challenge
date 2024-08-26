@@ -287,17 +287,15 @@ Fifty SECTİON
 
 */
 .fifty-section {
-  /*background-image: url(img/third-section.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  */
   height: 546px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-top: 24px;
   margin-bottom: 100px;
 }
+
 .fifty-section article {
   align-self: center;
   margin-right: 0px;
@@ -322,8 +320,10 @@ Fifty SECTİON
 }
 .blue-now {
   background-color: #111b47;
+  align-self: flex-end;
   color: #fff;
   border-radius: 5px;
+  margin-top: 44px;
   border: 2px solid;
   cursor: pointer;
   padding: 5px 0;
