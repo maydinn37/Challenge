@@ -423,9 +423,10 @@ footer article {
   justify-content: space-between;
   padding-bottom: 32px;
 }
-.i {
-  background-color: #b0b8bc;
+i {
+  color: #b0b8bc;
   cursor: pointer;
+  margin: 5px;
 }
 .border {
   position: absolute;
