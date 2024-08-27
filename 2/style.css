@@ -3,87 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  max-width: 100%;
-}
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 500px);
-  max-width: 1000px;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  width: 100vw;
+  height: 100vh;
 }
-.box1 {
-  width: 500px;
-  height: 440px;
-  background-color: rgba(235, 231, 108, 0.5);
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-right: 5px solid black;
-  border-bottom: 5px solid black; */
 }
-.box1-1 {
+.box-round {
+  background-color: rgba(235, 231, 108, 0.5);
+}
+.box-round-shape {
+  background-color: #ebe76c;
   width: 221px;
   height: 221px;
-  background-color: #ebe76c;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-.box2 {
-  width: 500px;
-  height: 440px;
+.box-triangle {
   background-color: rgba(240, 184, 110, 0.5);
-  /* border-bottom: 5px solid black; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.box2-1 {
+.box-triangle-shape {
   width: 0;
   height: 0;
   border-bottom: 200px solid #f0b86e;
   border-left: 117px solid transparent;
   border-right: 117px solid transparent;
 }
-
-.box3 {
-  width: 500px;
-  height: 440px;
+.box-square {
   background-color: rgba(237, 123, 123, 0.5);
-  /* border-right: 5px solid black; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.box3-1 {
+.box-square-shape {
   background-color: #ed7b7b;
   width: 159px;
   height: 163px;
 }
-
-.box4 {
-  width: 500px;
-  height: 440px;
+.box-rectangle {
   background-color: rgba(131, 96, 150, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.box4-1 {
+.box-rectangle-shape {
   background-color: #836096;
   width: 327px;
   height: 163px;
 }
+
 .line-y {
   align-self: center;
   position: absolute;
-  width: 500px;
+  width: 50%;
   height: 5px;
   background-color: black;
-  left: 250px;
+  left: 25%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -93,10 +71,10 @@ body {
 .line-x {
   position: absolute;
   width: 5px;
-  height: 500px;
+  height: 50%;
   background-color: black;
   align-self: center;
-  left: 500px;
+  left: 50%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
