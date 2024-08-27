@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 100%;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(2, 500px);
+  max-width: 1000px;
 }
 .box1 {
   width: 500px;
@@ -79,7 +83,7 @@
   width: 500px;
   height: 5px;
   background-color: black;
-  margin-left: 250px;
+  left: 250px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -92,7 +96,7 @@
   height: 500px;
   background-color: black;
   align-self: center;
-  margin-left: 500px;
+  left: 500px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
