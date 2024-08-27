@@ -56,11 +56,11 @@
 }
 
 .line-y {
-  align-self: center;
   position: absolute;
   width: 50%;
   height: 5px;
   background-color: black;
+  top: 50%;
   left: 25%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -73,7 +73,7 @@
   width: 5px;
   height: 50%;
   background-color: black;
-  align-self: center;
+  top: 25%;
   left: 50%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
