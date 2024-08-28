@@ -60,13 +60,10 @@
   width: 50%;
   height: 5px;
   background-color: black;
+  transform: translateY(-2px);
   top: 50%;
   left: 25%;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .line-x {
   position: absolute;
@@ -75,9 +72,6 @@
   background-color: black;
   top: 25%;
   left: 50%;
+  transform: translateX(-2px);
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
