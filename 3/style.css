@@ -188,13 +188,13 @@ a {
     align-items: flex-end;
   }
   .photo img {
-    width: 380px;
+    width: 400px;
     height: 380px;
     margin-top: 600px;
   }
   .screen {
     background-color: #fff;
-    width: 380px;
+    width: 400px;
     height: 940px;
   }
   .screen-form {
@@ -206,7 +206,7 @@ a {
   }
 
   .screen form h1 {
-    width: 338px;
+    width: 380px;
     font-size: 36px;
     font-weight: 500;
     line-height: 1.36;
