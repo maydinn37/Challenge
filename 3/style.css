@@ -118,6 +118,8 @@ i {
   color: #2f2f2f;
   background-color: transparent;
   border: none;
+  outline: none;
+  width: 550px;
 }
 
 .item {
@@ -169,7 +171,7 @@ i {
 a {
   text-decoration: none;
 }
-@media only screen and (max-width: 400px) and (min-width: 350px) {
+@media only screen and (max-width: 500px) and (min-width: 350px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -181,28 +183,30 @@ a {
   }
   .photo {
     display: flex;
-    flex-direction: column;
-
-    width: 390px;
-    height: auto;
-    margin-top: 700px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .photo img {
     width: 380px;
     height: 380px;
+    margin-top: 600px;
   }
   .screen {
     background-color: #fff;
-    width: auto;
+    width: 380px;
+    height: 940px;
   }
   .screen-form {
-    max-width: 390px;
+    max-width: 380px;
+    margin-left: 20px;
     display: flex;
-    margin-left: 0px;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .screen form h1 {
-    width: 350px;
+    width: 338px;
     font-size: 36px;
     font-weight: 500;
     line-height: 1.36;
@@ -216,7 +220,7 @@ a {
     color: #6358dc;
   }
   .screen form button {
-    width: 350px;
+    width: 380px;
     height: 78px;
     border-radius: 8px;
     box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.08);
@@ -249,7 +253,7 @@ a {
     margin-bottom: 47px;
   }
   .line {
-    width: 130px;
+    width: 100px;
     height: 1px;
     flex-grow: 0;
     background-color: #bfbfbf;
@@ -259,7 +263,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 350px;
+    width: 380px;
     height: 77px;
     border-radius: 8px;
     background-color: #ececec;
@@ -283,6 +287,8 @@ a {
     color: #2f2f2f;
     background-color: transparent;
     border: none;
+    outline: none;
+    width: 250px;
   }
 
   .item {
@@ -301,6 +307,7 @@ a {
   }
   .subdivision {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
   }
@@ -328,7 +335,7 @@ a {
     margin-bottom: 47px;
   }
   .screen-form p {
-    margin-left: 0px;
+    margin-left: 50px;
     margin-bottom: 50px;
   }
   a {
