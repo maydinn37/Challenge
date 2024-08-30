@@ -6,7 +6,8 @@
 .container {
   background-color: #fff;
   display: grid;
-  max-height: 1477px;
+  max-height: 100%;
+  max-width: 100%;
   gap: 42px;
   margin-bottom: 90px;
   margin-top: 100px;
