@@ -78,7 +78,7 @@
     display: grid;
     height: 400px;
     width: 400px;
-    gap: auto;
+    gap: 30px;
   }
   .box1 {
     grid-column: 1;
