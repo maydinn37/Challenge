@@ -19,21 +19,20 @@
 .box-container {
   display: flex;
   flex-direction: row;
-  margin-top: 0px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 .board {
-  margin-top: 0px;
   font-size: 125px;
   user-select: none;
 }
 .plus {
-  margin-right: 250px;
   font-size: 200px;
   cursor: pointer;
   user-select: none;
 }
 .reset {
-  margin-top: 59px;
   font-size: 100px;
   cursor: pointer;
   user-select: none;
