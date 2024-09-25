@@ -13,12 +13,9 @@
   width: 500px;
   height: 500px;
   border-radius: 100%;
-  /* margin-left: 30%;
-  margin-top: 5%; */
 }
 .box-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;

@@ -1,40 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+}
+.container {
+  margin: 20px 20px auto 20px;
 }
 .accordion {
-  background-color: #fff;
-  color: #202020;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.5s;
-  box-shadow: 0 0 20px 0 rgba(85, 148, 221, 0.25);
-}
-.active,
-.accordion:hover {
-  background-color: #f1f1f1;
-}
-
-.panel {
-  padding: 0 18px;
   background-color: white;
-  display: none;
-  overflow: hidden;
-  box-shadow: 0 0 20px 0 rgba(85, 148, 221, 0.25);
+  width: 100%;
 }
-button {
+.accordion-header {
   display: flex;
   justify-content: space-between;
+  text-align: left;
+  border: none;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 20px 0 rgba(85, 148, 221, 0.25);
+}
+.accordion-content {
+  padding: 18px;
+  background-color: white;
+  display: none;
+  outline: none;
+  border: none;
 }
 
 .active i {
   transform: rotate(90deg);
+  transition: 0.2s;
+}
+.active .accordion-content {
+  display: block;
 }
