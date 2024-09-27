@@ -44,8 +44,7 @@
   background-color: black;
   color: white;
 }
-.content {
-}
+
 .content img {
   position: absolute;
 }
@@ -62,6 +61,7 @@
   opacity: 0;
 }
 .hover:hover {
-  background-color: rgba(107, 107, 107, 0.93);
-  opacity: 1;
+  background-color: #3c3d37;
+  opacity: 0.93;
+  color: #fff;
 }
