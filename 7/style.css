@@ -44,13 +44,24 @@
   background-color: black;
   color: white;
 }
-
+.content {
+}
 .content img {
   position: absolute;
 }
-.content p {
-  display: block;
+.hover {
   position: relative;
-  background-color: wheat;
-  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 465px;
+  height: 310px;
+  opacity: 0;
+}
+.hover:hover {
+  background-color: rgba(107, 107, 107, 0.93);
+  opacity: 1;
 }
