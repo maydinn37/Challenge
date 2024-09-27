@@ -4,7 +4,6 @@ let btnGame = document.querySelector(".btn-game");
 let imgPhoto = document.querySelectorAll(".photo");
 let imgGame = document.querySelectorAll(".game");
 let btn = document.querySelectorAll(".btn");
-
 btn.forEach(function (btnItem) {
   btnItem.addEventListener("click", function () {
     btnGame.classList.remove("active");
