@@ -48,9 +48,16 @@
 .content img {
   position: absolute;
 }
-.content p {
-  display: block;
+
+.animationOn {
   position: relative;
-  background-color: wheat;
-  padding: 7px;
+  display: flex;
+  background-color: rgba(107, 107, 107, 0.93);
+  width: 465px;
+  height: 310px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
 }

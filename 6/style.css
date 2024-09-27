@@ -3,36 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  margin: 20px 20px auto 20px;
-}
 .accordion {
-  background-color: white;
-  width: 100%;
-}
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  border: none;
-  padding: 15px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 0 0 20px 0 rgba(85, 148, 221, 0.25);
-}
-.accordion-content {
-  padding: 18px;
-  background-color: white;
-  display: none;
-  outline: none;
-  border: none;
+  margin: 15px;
 }
 
+.accordion_header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: wheat;
+  margin-bottom: 5px;
+}
 .active i {
   transform: rotate(90deg);
-  transition: 0.2s;
 }
-.active .accordion-content {
+.accordion_content {
+  display: none;
+}
+
+.active .accordion_content {
   display: block;
 }
