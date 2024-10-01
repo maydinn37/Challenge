@@ -73,7 +73,7 @@
   height: 0;
   background-color: rgba(107, 107, 107);
   opacity: 0.5;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .hover:hover::before {
