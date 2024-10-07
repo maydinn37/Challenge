@@ -10,17 +10,17 @@
 .accordion_header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   background-color: wheat;
   margin-bottom: 5px;
+  padding: 10px;
 }
-.active i {
-  transform: rotate(90deg);
-}
+
 .accordion_content {
   display: none;
 }
 
-.active .accordion_content {
+.active {
   display: block;
 }
