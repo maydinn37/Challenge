@@ -11,6 +11,10 @@
   grid-template-columns: repeat(3, 470px);
   grid-template-rows: repeat(3, 315px);
 }
+.button {
+  margin-bottom: 31px;
+  margin-top: 83px;
+}
 .btn {
   width: 145px;
   height: 67px;
@@ -19,8 +23,6 @@
   font-size: 24px;
   background-color: #fff;
   cursor: pointer;
-  margin-bottom: 31px;
-  margin-top: 83px;
   transition: 0.3s;
 }
 .btn:hover {
