@@ -54,22 +54,24 @@ form div {
 }
 .images p {
   color: #d6d6d6;
-  visibility: hidden;
 }
 .card-name-pre {
   position: absolute;
   right: -157px;
   top: 140px;
+  visibility: hidden;
   width: 300px;
 }
 .card-number-pre {
   position: absolute;
   right: -110px;
+  visibility: hidden;
   top: 65px;
   width: 250px;
 }
 .card-date-pre {
   position: absolute;
+  visibility: hidden;
   left: 60px;
   top: 140px;
 }
@@ -78,9 +80,13 @@ form div {
   left: 60px;
   top: 67px;
   color: black !important;
-  transition: opacity 0.2s ease-in-out, visibility 0s 2s;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in-out, visibility 0s 1s;
 }
 .active {
+  visibility: visible !important;
+}
+.active-cvv {
   visibility: visible !important;
 }
 .namee {
