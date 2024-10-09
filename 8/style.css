@@ -32,10 +32,12 @@ form {
 form div {
   margin-bottom: 8px;
 }
-.img {
+.images {
   position: relative;
-  bottom: 30%;
-  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
 }
 .card-back {
   margin-bottom: 23px;
@@ -50,8 +52,38 @@ form div {
   backface-visibility: hidden;
   position: absolute;
 }
-
-.name {
+.images p {
+  color: #d6d6d6;
+  visibility: hidden;
+}
+.card-name-pre {
+  position: absolute;
+  right: -157px;
+  top: 140px;
+  width: 300px;
+}
+.card-number-pre {
+  position: absolute;
+  right: -110px;
+  top: 65px;
+  width: 250px;
+}
+.card-date-pre {
+  position: absolute;
+  left: 60px;
+  top: 140px;
+}
+.cvv-pre {
+  position: absolute;
+  left: 60px;
+  top: 67px;
+  color: black !important;
+  transition: opacity 0.2s ease-in-out, visibility 0s 2s;
+}
+.active {
+  visibility: visible !important;
+}
+.namee {
   display: flex;
   flex-direction: column;
 }
@@ -68,6 +100,7 @@ form div {
 .cvv input {
   width: 100%;
 }
+
 input {
   border: none;
   border-bottom: 1.5px solid;
