@@ -1,10 +1,3 @@
-// const card = document.querySelectorAll("img");
-// const cvv = document.querySelector(".cvv-input");
-// cvv.addEventListener("click", function () {
-//   setTimeout(() => {
-//     card.style.animation = "spin 2s  ";
-//   });
-// });
 const cards = document.querySelectorAll("img");
 const nameInput = document.querySelector(".name-input");
 const cvvPre = document.querySelector(".cvv-pre");
