@@ -81,7 +81,9 @@ form div {
   top: 67px;
   color: black !important;
   visibility: hidden;
-  transition: opacity 0.1s ease-in-out, visibility 0s 1s;
+}
+.delay {
+  transition-delay: 600ms;
 }
 .active {
   visibility: visible !important;

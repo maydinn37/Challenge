@@ -10,25 +10,25 @@ form.forEach((item, index) => {
     });
   });
 });
-
 form.forEach((item, index) => {
   form[index].addEventListener("click", function () {
     cards.forEach((card) => {
-      card.style.animation = "start 2s forwards";
+      card.style.animation = "start 1s forwards";
     });
     cvvPre.classList.remove("active-cvv");
     images.forEach((item, index) => {
-      images[index].classList.add("active");
-      images[3].classList.remove("active");
+      images[index].classList.add("active", "delay");
+      images[3].classList.remove("active", "delay");
     });
   });
 });
 form[3].addEventListener("click", function () {
   cards.forEach((card) => {
-    card.style.animation = "spin 2s forwards";
+    card.style.animation = "spin 1s forwards";
   });
   cvvPre.classList.add("active-cvv");
   images.forEach((item, index) => {
-    images[index].classList.remove("active");
+    images[index].classList.remove("active", "delay");
+    images[3].classList.add("delay");
   });
 });
