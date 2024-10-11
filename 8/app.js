@@ -11,7 +11,7 @@ form.forEach((item, index) => {
   });
 });
 form.forEach((item, index) => {
-  form[index].addEventListener("click", function () {
+  form[index].addEventListener("focus", function () {
     cards.forEach((card) => {
       card.style.animation = "start 1s forwards";
     });
@@ -22,7 +22,7 @@ form.forEach((item, index) => {
     });
   });
 });
-form[3].addEventListener("click", function () {
+form[3].addEventListener("focus", function () {
   cards.forEach((card) => {
     card.style.animation = "spin 1s forwards";
   });
@@ -32,3 +32,19 @@ form[3].addEventListener("click", function () {
     images[3].classList.add("delay");
   });
 });
+
+function Number(i) {
+  let value = i.value.replace(/\D/g, "");
+  value = value.match(/.{1,4}/g)?.join(" ") || value;
+  i.value = value;
+}
+function Date(i) {
+  let value = i.value.replace(/\D/g, "");
+  if (value.length > 2) {
+    value = value.slice(0, 2) + "/" + value.slice(2);
+  }
+  i.value = value;
+}
+function letter(i) {
+  i.value = i.value.replace(/[^a-zA-ZÇçĞğİıÖöŞşÜü\s]/g, "");
+}

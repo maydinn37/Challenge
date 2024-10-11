@@ -83,7 +83,7 @@ form div {
   visibility: hidden;
 }
 .delay {
-  transition-delay: 600ms;
+  transition-delay: 540ms;
 }
 .active {
   visibility: visible !important;

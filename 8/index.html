@@ -26,20 +26,31 @@
       <form action="#">
         <div class="namee">
           <label for="#">CardHolder Name*</label>
-          <input class="name-input" type="text" />
+          <input
+            required
+            oninput="letter(this)"
+            class="name-input"
+            type="text"
+          />
         </div>
         <div class="number">
           <label for="#">Card Number*</label>
-          <input type="text" maxlength="19" />
+          <input required oninput="Number(this)" type="text" maxlength="19" />
         </div>
         <div class="card-date">
           <div class="date">
             <label for="#">Exp. Date(MM/YY)*</label>
-            <input type="text" maxlength="5" />
+            <input required oninput="Date(this)" type="text" maxlength="5" />
           </div>
           <div class="cvv">
             <label for="#">CVV*</label>
-            <input maxlength="3" type="text" class="cvv-input" />
+            <input
+              required
+              maxlength="3"
+              type="text"
+              class="cvv-input"
+              oninput="Number(this)"
+            />
           </div>
         </div>
       </form>
