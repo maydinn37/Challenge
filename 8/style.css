@@ -57,28 +57,28 @@ form div {
 }
 .card-name-pre {
   position: absolute;
-  right: -157px;
+  right: -165px;
   top: 140px;
   visibility: hidden;
   width: 300px;
 }
 .card-number-pre {
   position: absolute;
-  right: -110px;
+  right: -115px;
   visibility: hidden;
-  top: 65px;
+  top: 110px;
   width: 250px;
 }
 .card-date-pre {
   position: absolute;
   visibility: hidden;
-  left: 60px;
+  left: 80px;
   top: 140px;
 }
 .cvv-pre {
   position: absolute;
-  left: 60px;
-  top: 67px;
+  left: 115px;
+  top: 77px;
   color: black !important;
   visibility: hidden;
 }
