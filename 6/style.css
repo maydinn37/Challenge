@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .accordion {
-  margin: 15px;
+  margin: 5px;
 }
 
 .accordion_header {
@@ -12,15 +12,20 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  background-color: wheat;
-  margin-bottom: 5px;
+  background-color: #fff;
   padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(85, 148, 221, 0.25);
 }
 
 .accordion_content {
   display: none;
+  margin-left: 15px;
 }
 
 .active {
   display: block;
+}
+
+.rotate i {
+  transform: rotate(90deg);
 }
