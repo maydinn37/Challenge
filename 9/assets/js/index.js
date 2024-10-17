@@ -27,15 +27,31 @@ function imgShowSlide(index) {
 
 function button() {
   leftButton.addEventListener("click", function () {
-    newIndex = newIndex - 1;
-    imgShowSlide(newIndex);
+    if (newIndex >= 0 && newIndex <= data.length) {
+      newIndex = newIndex - 1;
+      imgShowSlide(newIndex);
+    } else {
+      newIndex = data.length;
+      imgShowSlide(newIndex);
+    }
   });
 
   rightButton.addEventListener("click", function () {
-    newIndex = newIndex + 1;
-    imgShowSlide(newIndex);
+    if (newIndex <= data.length) {
+      newIndex = newIndex + 1;
+      imgShowSlide(newIndex);
+    } else {
+      newIndex = 0;
+      imgShowSlide(newIndex);
+    }
   });
 }
+
+circle.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    imgShowSlide(index);
+  });
+});
 
 function activeCircles(index) {
   circle.forEach((item, i) => {
