@@ -55,3 +55,61 @@ let productsKDV = products.map(function (pro) {
 productsKDV.forEach(function (p) {
   console.log(p);
 });
+
+// !Switch Case ÖRNEĞİ
+let day = "salı";
+switch (day) {
+  case "Pazartesi":
+    console.log("Haftanın İlk Günü");
+    break;
+  case "salı":
+    console.log("haftanın ikinci günü");
+    break;
+  case "çarşamba":
+    console.log("Haftanın ortası");
+    break;
+  case "perşembe":
+    console.log("haftanın dördüncü günü");
+    break;
+  case "cuma":
+    console.log("mubarek gün");
+    break;
+  default:
+    console.log("HAFTASONU");
+}
+
+function cars(item) {
+  switch (item) {
+    case "bmw":
+      console.log("The Best CAR");
+      break;
+    case "mercedes":
+      console.log("nice car");
+      break;
+    case "porsche":
+      console.log("My Dream CAR");
+      break;
+    default:
+      console.log("It isnt Car");
+  }
+}
+cars("porsche");
+cars("bmw");
+cars("mercedes");
+cars("fiat");
+
+// ! Try Catch Örneği
+
+try {
+  let number = [0, 1, 2, 3];
+  console.log(number[0]);
+  console.log(number[5]);
+} catch (error) {
+  console.log("Hatalı işlem...");
+}
+
+try {
+  console.log(car);
+} catch (error) {
+  console.log("HATALI İŞLEM YAPILDI.");
+}

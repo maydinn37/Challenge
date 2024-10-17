@@ -5,21 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carousel</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <header>
-      <img src="assets/images/logo.png" alt="" />
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+    <div class="container">
+      <header>
+        <img class="logo" src="assets/images/logo.png" alt="" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button>Sing Up</button>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <section class="carousel">
+      <figure></figure>
+      <div class="carousel-button">
+        <div class="left">
+          <i class="fa-solid fa-chevron-left" style="color: #000000"></i>
+        </div>
+        <div class="right">
+          <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+        </div>
       </div>
-      <button>Sing Up</button>
-    </header>
+      <div class="carousel-circle">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
