@@ -27,23 +27,20 @@ function imgShowSlide(index) {
 
 function button() {
   leftButton.addEventListener("click", function () {
-    if (newIndex >= 0 && newIndex <= data.length) {
-      newIndex = newIndex - 1;
-      imgShowSlide(newIndex);
-    } else {
-      newIndex = data.length;
-      imgShowSlide(newIndex);
+    newIndex = newIndex - 1;
+
+    if (newIndex < 0) {
+      newIndex = data.length - 1;
     }
+    imgShowSlide(newIndex);
   });
 
   rightButton.addEventListener("click", function () {
-    if (newIndex <= data.length) {
-      newIndex = newIndex + 1;
-      imgShowSlide(newIndex);
-    } else {
-      newIndex = 0;
-      imgShowSlide(newIndex);
+    newIndex = newIndex + 1;
+    if (newIndex >= data.length) {
+      newIndex = data.length - data.length;
     }
+    imgShowSlide(newIndex);
   });
 }
 
