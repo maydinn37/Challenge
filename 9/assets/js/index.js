@@ -26,7 +26,6 @@ function imgShowSlide(index) {
 function carouselButtonClick() {
   const leftButton = document.querySelector(".carousel-button .left");
   const rightButton = document.querySelector(".carousel-button .right");
-  let newIndex = 0;
 
   leftButton.addEventListener("click", function () {
     newIndex = newIndex - 1;
