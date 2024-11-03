@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 .container {
@@ -26,8 +27,53 @@
   border-radius: 2px;
   position: relative;
   background-color: #d9d9d9;
-  margin-bottom: 6px;
   padding-left: 10px;
+}
+.list button {
+  height: 34px;
+  text-align: start;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.new-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 353px;
+  height: 34px;
+  background-color: #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: none;
+  margin-bottom: 6px;
+}
+.check-box {
+  position: absolute;
+  cursor: pointer;
+  bottom: 20px;
+  left: -150px;
+  transform: scale(55%);
+  border-color: black;
+  border: 5px;
+}
+.closed-button {
+  position: absolute;
+  color: #666;
+  cursor: pointer;
+  font-size: 22px;
+  right: 10px;
+  font-weight: 700;
+}
+.new-button {
+  position: absolute;
+  width: 353px;
+  left: 50px;
+}
+.strikethrough {
+  text-decoration: line-through;
+  color: white !important;
 }
 .empty {
   border: 5px solid red !important;
@@ -41,4 +87,10 @@
   top: 73px;
   right: 7px;
   cursor: pointer;
+}
+.active {
+  background-color: #5529dc;
+}
+.hidden {
+  opacity: 0;
 }
