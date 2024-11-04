@@ -51,29 +51,35 @@
 }
 .check-box {
   position: absolute;
+  left: 4px;
   cursor: pointer;
-  bottom: 20px;
-  left: -150px;
-  transform: scale(55%);
-  border-color: black;
-  border: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+}
+.check-box:hover {
+  background-color: #b6b6b6;
+  transition: 200ms;
+}
+.check {
+  position: absolute;
+  left: 7px !important;
+  cursor: pointer;
+  top: 7px !important;
+  width: 20px;
+  height: 20px;
 }
 .closed-button {
-  position: absolute;
-  text-align: center;
   color: #666;
-  cursor: pointer;
-  font-size: 22px;
-  right: 0px;
-  font-weight: 700;
-  width: 34px;
-  height: 34px;
-  background-color: #d9d9d9;
+  top: 8px !important;
+  transform: rotate(45deg);
 }
 .new-button {
   position: absolute;
   width: 353px;
-  left: 50px;
+  left: 28px;
 }
 .strikethrough {
   text-decoration: line-through;

@@ -16,13 +16,17 @@ function newElement() {
     let newDiv = document.createElement("div");
     newDiv.classList.add("new-div");
 
-    let checkBox = document.createElement("input");
-    checkBox.type = "checkbox";
+    let checkBox = document.createElement("div");
     checkBox.classList.add("check-box");
 
-    let closedButton = document.createElement("span");
-    closedButton.textContent = "x";
+    let check = document.createElement("i");
+    check.classList.add("fa-solid", "fa-check", "check");
+    check.style.color = "#020631";
+
+    let closedButton = document.createElement("i");
+    closedButton.textContent = "";
     closedButton.classList.add("closed-button");
+    closedButton.classList.add("fa-solid", "fa-plus");
 
     let newButton = document.createElement("span");
     newButton.textContent = inputValue;
@@ -40,14 +44,26 @@ function newElement() {
       text.setAttribute("placeholder", "");
     }
     text.value = "";
-    checkBox.addEventListener("click", function () {
-      newButton.classList.toggle("strikethrough");
-      closedButton.classList.toggle("hidden");
-      newDiv.classList.toggle("active");
-    });
-    newButton.addEventListener("click", function () {
-      checkBox.click();
-    });
+
+    toggleEventListener(checkBox, newButton, check, newDiv);
+
+    function toggleEventListener(checkBox, newButton, check, newDiv) {
+      newDiv.addEventListener("click", function () {
+        if (newDiv.contains(check)) {
+          check.remove();
+          newDiv.appendChild(checkBox);
+          newButton.classList.remove("strikethrough");
+          closedButton.classList.remove("hidden");
+          newDiv.classList.remove("active");
+        } else {
+          checkBox.remove();
+          newDiv.appendChild(check);
+          newButton.classList.add("strikethrough");
+          closedButton.classList.add("hidden");
+          newDiv.classList.add("active");
+        }
+      });
+    }
     closedButton.addEventListener("click", function () {
       newDiv.remove();
     });
