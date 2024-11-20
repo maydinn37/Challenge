@@ -1,4 +1,5 @@
-let data = JSON.parse(localStorage.getItem("todo")) || [];
+let data = JSON.parse(localStorage.getItem("Todo")) || [];
+
 function newElement() {
   const add = document.querySelector(".list i");
   const list = document.querySelector(".list");
@@ -14,6 +15,25 @@ function newElement() {
 
   function addNewInput() {
     let inputValue = document.querySelector(".list input").value;
+    if (inputValue === "") {
+      text.classList.add("empty");
+      text.setAttribute("placeholder", "Birşeyler Yazmalısınız...");
+      return;
+    }
+
+    createNewDiv(inputValue);
+
+    data.push({
+      text: inputValue,
+      status: "uncompleted",
+    });
+    localStorage.setItem("Todo", JSON.stringify(data));
+    text.value = "";
+    text.classList.remove("empty");
+    text.setAttribute("placeholder", "");
+  }
+
+  function createNewDiv(textContent, status = "uncompleted") {
     let newDiv = document.createElement("div");
     newDiv.classList.add("new-div");
 
@@ -26,59 +46,68 @@ function newElement() {
 
     let closedButton = document.createElement("i");
     closedButton.textContent = "";
-    closedButton.classList.add("closed-button");
-    closedButton.classList.add("fa-solid", "fa-plus");
+    closedButton.classList.add("closed-button", "fa-solid", "fa-plus");
 
     let newButton = document.createElement("span");
-    newButton.textContent = inputValue;
+    newButton.textContent = textContent;
     newButton.classList.add("new-button");
 
-    if (inputValue === "") {
-      text.classList.add("empty");
-      text.setAttribute("placeholder", "Birşeyler Yazmalısınız...");
+    if (status === "completed") {
+      newDiv.appendChild(check);
+      newButton.classList.add("strikethrough");
+      closedButton.classList.add("hidden");
+      newDiv.classList.add("active");
     } else {
-      text.classList.remove("empty");
       newDiv.appendChild(checkBox);
-      newDiv.appendChild(newButton);
-      newDiv.appendChild(closedButton);
-      list.appendChild(newDiv);
-      text.setAttribute("placeholder", "");
-      data.push({
-        text: inputValue,
-        status: "uncompleted",
-      });
-      localStorage.setItem("Todo", JSON.stringify(data));
     }
-    text.value = "";
 
-    toggleEventListener(checkBox, newButton, check, newDiv);
-    let dataItem = data.find((item) => item.text === inputValue);
+    newDiv.appendChild(newButton);
+    newDiv.appendChild(closedButton);
+    list.appendChild(newDiv);
 
-    function toggleEventListener(checkBox, newButton, check, newDiv) {
-      newDiv.addEventListener("click", function () {
-        if (newDiv.contains(check)) {
-          check.remove();
-          newDiv.appendChild(checkBox);
-          newButton.classList.remove("strikethrough");
-          closedButton.classList.remove("hidden");
-          newDiv.classList.remove("active");
-        } else {
-          checkBox.remove();
-          newDiv.appendChild(check);
-          newButton.classList.add("strikethrough");
-          closedButton.classList.add("hidden");
-          newDiv.classList.add("active");
-          dataItem.status = "completed";
-        }
-      });
-      localStorage.setItem("Todo", JSON.stringify(data));
-    }
+    toggleEventListener(checkBox, newButton, check, newDiv, textContent);
+
     closedButton.addEventListener("click", function () {
       newDiv.remove();
-      data = data.filter((item) => item.text !== inputValue);
+      data = data.filter((item) => item.text !== textContent);
       localStorage.setItem("Todo", JSON.stringify(data));
     });
   }
+
+  function toggleEventListener(
+    checkBox,
+    newButton,
+    check,
+    newDiv,
+    textContent
+  ) {
+    let closedButton = newDiv.querySelector(".closed-button");
+
+    newDiv.addEventListener("click", function () {
+      let dataItem = data.find((item) => item.text === textContent);
+      if (newDiv.contains(check)) {
+        check.remove();
+        newDiv.appendChild(checkBox);
+        newButton.classList.remove("strikethrough");
+        closedButton.classList.remove("hidden");
+        newDiv.classList.remove("active");
+        dataItem.status = "uncompleted";
+      } else {
+        checkBox.remove();
+        newDiv.appendChild(check);
+        newButton.classList.add("strikethrough");
+        closedButton.classList.add("hidden");
+        newDiv.classList.add("active");
+        dataItem.status = "completed";
+      }
+      localStorage.setItem("Todo", JSON.stringify(data));
+    });
+  }
+  window.onload = function () {
+    data.forEach((item) => {
+      createNewDiv(item.text, item.status);
+    });
+  };
 }
 
 newElement();
