@@ -1,3 +1,4 @@
+let data = JSON.parse(localStorage.getItem("todo")) || [];
 function newElement() {
   const add = document.querySelector(".list i");
   const list = document.querySelector(".list");
@@ -42,10 +43,16 @@ function newElement() {
       newDiv.appendChild(closedButton);
       list.appendChild(newDiv);
       text.setAttribute("placeholder", "");
+      data.push({
+        text: inputValue,
+        status: "uncompleted",
+      });
+      localStorage.setItem("Todo", JSON.stringify(data));
     }
     text.value = "";
 
     toggleEventListener(checkBox, newButton, check, newDiv);
+    let dataItem = data.find((item) => item.text === inputValue);
 
     function toggleEventListener(checkBox, newButton, check, newDiv) {
       newDiv.addEventListener("click", function () {
@@ -61,11 +68,15 @@ function newElement() {
           newButton.classList.add("strikethrough");
           closedButton.classList.add("hidden");
           newDiv.classList.add("active");
+          dataItem.status = "completed";
         }
       });
+      localStorage.setItem("Todo", JSON.stringify(data));
     }
     closedButton.addEventListener("click", function () {
       newDiv.remove();
+      data = data.filter((item) => item.text !== inputValue);
+      localStorage.setItem("Todo", JSON.stringify(data));
     });
   }
 }
