@@ -349,17 +349,18 @@ span {
   font-size: 24px !important;
   font-weight: 500 !important;
   line-height: 1.08 !important;
-  text-align: center !important;
+  text-align: start !important;
   color: #222 !important;
 }
 .Location {
-  margin-left: 16px;
+  margin-left: 16px !important;
   margin-right: 49px !important;
   font-family: "Poppins", serif !important;
   font-size: 16px !important;
   line-height: 1.25 !important;
   text-align: center !important;
   color: #666 !important;
+  text-align: start !important;
 }
 .Location i {
   margin-right: 3px;
@@ -620,7 +621,7 @@ span {
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  padding-bottom: 179px;
+  padding-bottom: 379px;
   position: relative;
 }
 .update-carousel h2 {
@@ -652,10 +653,94 @@ span {
 .update-carousel .row {
   margin-top: 24px !important;
 }
+.update-carousel .contact-us {
+  width: 1170px;
+  height: 416px;
+  flex-grow: 0;
+  margin: 0 0.2px 0 0;
+  border-radius: 16px;
+  background-color: #fa7436;
+  position: absolute;
+  bottom: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.update-carousel .contact-us h2 {
+  display: flex;
+  width: 708px;
+  height: 125px;
+  margin: 0 0 64px;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+}
+.update-carousel .contact-us input {
+  width: 674px;
+  height: 68px;
+  flex-grow: 0;
+  margin: 64px 19px 0 15px;
+  padding: 9px 9px 9px 22px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+  padding-left: 50px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #999;
+  z-index: 2;
+  bottom: 75px;
+}
+.update-carousel .contact-us i {
+  position: absolute;
+  bottom: 155px;
+  left: 265px;
+  z-index: 2;
+}
+.update-carousel .contact-us button {
+  position: absolute;
+  padding: 13px 26px;
+  border-radius: 8px;
+  background-color: #fa7436;
+  color: #fff;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: normal;
+  bottom: 130px;
+  right: 260px;
+  z-index: 2;
+}
+.update-carousel .contact-bg-circle {
+  position: absolute;
+  width: 480px;
+  height: 361px;
+  flex-grow: 0;
+  margin: 46px 575px 0 0;
+  object-fit: contain;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+.update-carousel .contact-bg-tree {
+  width: 112.2px;
+  height: 113.1px;
+  margin: 0 0 293.9px 76px;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+}
 .circles {
   display: flex;
   position: absolute;
-  bottom: 120px;
+  bottom: 320px;
   align-items: center;
 }
 .circle {
