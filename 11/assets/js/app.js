@@ -31,41 +31,6 @@ function bookNowCarousel() {
   });
 }
 bookNowCarousel();
-/*
-function comments() {
-  let currentIndex = 0;
-
-  const commentBox = document.querySelectorAll(
-    ".comments-parts .comments .comments-form"
-  );
-  const commentsBtn = document.querySelectorAll(
-    ".comments-parts .next-previous-btn i"
-  );
-
-  const facePhoto = document.querySelectorAll(".comments .face-img");
-
-  commentsBtn.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      const isNext = btn.classList.contains("next");
-      commentBox[currentIndex].classList.remove("comment-box2");
-      commentBox[currentIndex].classList.add("comment-box");
-
-      if (isNext) {
-        currentIndex = (currentIndex + 1) % commentBox.length;
-      } else {
-        currentIndex =
-          (currentIndex - 1 + commentBox.length) % commentBox.length;
-      }
-
-      commentBox[currentIndex].classList.add("comment-box2");
-      commentBox[currentIndex].classList.remove("comment-box");
-      // facePhoto[currentIndex].classList.toggle("hidden");
-    });
-  });
-}
-
-comments();
-*/
 
 function comments() {
   let currentIndex = 0;
