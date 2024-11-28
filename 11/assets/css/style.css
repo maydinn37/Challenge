@@ -147,18 +147,36 @@ span {
   display: flex;
   justify-content: space-around;
 }
+.buttons i {
+  transform: rotate(90deg) !important;
+}
 .content {
   display: flex;
-  justify-content: space-around;
-  margin-left: 3px;
   margin-top: 10px;
+  justify-content: space-around;
 }
-.content p {
+.content input {
   height: 18px;
+  width: 101px;
   font-family: "Poppins", serif;
   font-size: 12px;
   color: #666;
-  margin-left: 32px;
+  border: none;
+  outline: none;
+  text-align: start;
+  margin-left: 35px;
+}
+.content input:first-child {
+  width: 125px;
+}
+.content input:last-child {
+  margin-left: 30px;
+}
+.hidden {
+  opacity: 0;
+}
+.rotate {
+  rotate: 270deg !important;
 }
 .search-bar button {
   border: none;
@@ -335,9 +353,6 @@ span {
   margin-right: 16px;
   margin-left: 0px;
 }
-.box2 {
-  box-shadow: 0 16px 80px 0 rgba(254, 147, 94, 0.2);
-}
 
 .book-now .carousel .carousel-box img {
   width: 270px;
@@ -352,6 +367,30 @@ span {
   text-align: start !important;
   color: #222 !important;
 }
+.selected {
+  box-shadow: 0 16px 80px 0 rgba(250, 87, 6, 0.2) !important;
+}
+
+.book-now .carousel .carousel-box .book-now-div {
+  width: 270px;
+  height: 290px;
+  background-color: rgba(85, 85, 85, 0.6);
+  position: absolute;
+}
+.book-now .carousel .carousel-box .book-now-btn {
+  width: 132px;
+  height: 50px;
+  flex-grow: 0;
+  border-radius: 8px;
+  background-color: #fa7436;
+  color: #fff;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 192px;
+  left: 69px;
+}
+
 .Location {
   margin-left: 16px !important;
   margin-right: 49px !important;
@@ -371,6 +410,9 @@ span {
 }
 .book-now .next-previous-btn i {
   margin-right: 32px;
+}
+.next-previous-btn i:hover {
+  color: #fa7436 !important;
 }
 .next-previous-btn i {
   cursor: pointer;
@@ -784,26 +826,22 @@ footer .communication .icon-circle {
   background-color: #fff;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   margin-right: 26px;
+  cursor: pointer;
 }
+
 footer .communication .icon-circle i {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 }
-footer .communication .icon-circle-orange {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  margin-right: 26px;
+footer .communication .icon-circle:hover {
   background-color: #fa7436;
 }
-footer .communication .icon-circle-orange i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
+footer .communication .icon-circle i:hover {
+  color: #fff;
 }
+
 .social-icons {
   display: flex;
 }
@@ -879,4 +917,9 @@ footer .row span {
   font-family: "Poppins", serif !important;
   font-size: 16px !important;
   color: #666 !important;
+}
+
+.sliderm__slide img {
+  width: 270px !important;
+  height: 270px !important;
 }

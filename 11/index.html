@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
   </head>
   <body>
     <header>
@@ -46,14 +47,14 @@
         <div class="search-bar-content">
           <div class="dropdown">
             <div class="buttons">
-              <button>Location <span>></span></button>
-              <button>Date <span>></span></button>
-              <button>Guest <span>></span></button>
+              <button>Location <span><i class="fa-solid fa-chevron-right"></i></span></button>
+              <button>Date <span><i class="fa-solid fa-chevron-right"></i></span></button>
+              <button>Guest <span><i class="fa-solid fa-chevron-right"></i></span></button>
             </div>
             <div class="content">
-              <p>Where are you going</p>
-              <p>When you will go</p>
-              <p>Number of guest</p>
+              <input type="text" placeholder="Where are you going">
+              <input type="text" placeholder="When you will go">
+              <input type="text" placeholder="Number of guest ">
             </div>
           </div>
           <button class="orange-btn">Explore Now</button>
@@ -113,11 +114,12 @@
         journey.
       </p>
       <div class="carousel">
-        <div class="carousel-box box1">
+        <div class="carousel-box box1 ">
+          <div class="book-now-div"><button class="book-now-btn">Book Now</button></div>
           <img src="assets/images/img1@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
-              <p class="city">Madrid</p>
+              <p class="city ">Madrid</p>
               <p class="reiting">
                 <i class="fa-solid fa-star" style="color: #ffd43b"></i>
                 4.8
@@ -133,6 +135,7 @@
           </div>
         </div>
         <div class="carousel-box box2">
+          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
           <img src="assets/images/img2@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -151,7 +154,8 @@
             </div>
           </div>
         </div>
-        <div class="carousel-box box3">
+        <div class="carousel-box box3 ">
+          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
           <img src="assets/images/img2@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -171,6 +175,7 @@
           </div>
         </div>
         <div class="carousel-box box4">
+          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
           <img src="assets/images/img4@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -197,7 +202,7 @@
         ></i>
         <i
           class="fa-solid fa-circle-arrow-right fa-2xl"
-          style="color: #fa7436"
+          style="color: #c2c2c2"
         ></i>
       </div>
     </section>
@@ -219,7 +224,7 @@
         ></i>
         <i
           class="fa-solid fa-circle-arrow-right fa-2xl"
-          style="color: #fa7436"
+          style="color: #c2c2c2"
         ></i>
       </div>
       <div class="carousel">
@@ -288,13 +293,23 @@
           ></i>
           <i
             class="fa-solid fa-circle-arrow-right fa-2xl"
-            style="color: #fa7436"
+            style="color: #c2c2c2"
           ></i>
         </div>
       </div>
       <div class="comments">
+        <img class="face-img" src="assets/images/women-face.png" alt="" />
         <img class="face-img" src="assets/images/face.png" alt="" />
-        <div class="comment-box">
+        
+        <div class="comments-form comment-box2">
+          <p class="comment">
+            “The mirrored meadow whispered softly, its gatherings quietly unfolding.
+            Certainly, what was once shared now lingered as if unchanged, neither doubted nor redirected.”
+          </p>
+          <h3 class="full-name">Chris Thomas</h3>
+          <p class="comment-state">CEO of Red Button</p>
+        </div>
+        <div class="comments-form comment-box">
           <p class="comment">
             “On the Windows talking painted pasture yet its express parties
             use.Sure last upon he same as knew next. Of believed or diverted
@@ -303,18 +318,10 @@
           <h3 class="full-name">Mike taylor</h3>
           <p class="comment-state">Lahore, Pakistan</p>
         </div>
-        <div class="comment-box2">
-          <p class="comment">
-            “On the Windows talking painted pasture yet its express parties
-            use.Sure last upon he same as knew next. Of believed or diverted
-            no.”
-          </p>
-          <h3 class="full-name">Chris Thomas</h3>
-          <p class="comment-state">CEO of Red Button</p>
-        </div>
       </div>
     </section>
     <section class="update-carousel">
+      
       <h2>Get update with <span>latest blog</span></h2>
       <div class="carousel">
         <div class="carousel-box box1">
@@ -401,8 +408,8 @@
             <div class="icon-circle">
               <i class="fa-brands fa-facebook-f"></i>
             </div>
-            <div class="icon-circle-orange">
-              <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+            <div class="icon-circle">
+              <i class="fa-brands fa-instagram""></i>
             </div>
             <div class="icon-circle"><i class="fa-brands fa-twitter"></i></div>
           </div>
@@ -441,5 +448,8 @@
         <span>Terms & Conditions</span>
       </div>
     </footer>
+
+    <script src="https://sliderm.com/dist/1.0.8/sliderm.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
