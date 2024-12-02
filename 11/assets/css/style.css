@@ -870,7 +870,7 @@ footer .communication p {
   color: #666;
 }
 footer .communication {
-  margin-left: 120px;
+  margin-left: 270px;
 }
 
 footer .communication h3 {
@@ -883,9 +883,10 @@ footer .communication h3 {
 }
 .cols {
   display: flex;
-  justify-content: space-around;
-  margin-right: 100px;
+  margin-right: 200px;
   height: 168px;
+  justify-content: space-around;
+  width: 800px;
 }
 footer .row .cols .col ul {
   list-style: none;
