@@ -8,9 +8,10 @@ searchButtons.forEach(function (button, i) {
     searchButtonsSpan[i].classList.toggle("rotate");
   });
 });
-
+/*
 function bookNowCarousel() {
   const carouselBoxBookNow = document.querySelectorAll(".book-now-div");
+  const carouselBoxBook = document.querySelectorAll(".carousel .carousel-box");
   const bookNowNextBtn = document.querySelectorAll(
     ".book-now .next-previous-btn i"
   );
@@ -19,19 +20,23 @@ function bookNowCarousel() {
 
   bookNowNextBtn[1].addEventListener("click", function () {
     carouselBoxBookNow[currentIndex].classList.add("hidden");
+    carouselBoxBook[currentIndex].classList.remove("selected");
     currentIndex = (currentIndex + 1) % carouselBoxBookNow.length;
     carouselBoxBookNow[currentIndex].classList.remove("hidden");
+    carouselBoxBook[currentIndex].classList.add("selected");
   });
   bookNowNextBtn[0].addEventListener("click", function () {
     carouselBoxBookNow[currentIndex].classList.add("hidden");
+    carouselBoxBook[currentIndex].classList.remove("selected");
     currentIndex =
       (currentIndex - 1 + carouselBoxBookNow.length) %
       carouselBoxBookNow.length;
+    carouselBoxBook[currentIndex].classList.add("selected");
     carouselBoxBookNow[currentIndex].classList.remove("hidden");
   });
 }
 bookNowCarousel();
-
+*/
 function comments() {
   let currentIndex = 0;
   const commentBox = document.querySelectorAll(
@@ -83,20 +88,86 @@ function comments() {
   });
 }
 comments();
-const sliderm = new Sliderm("#exampe-slider", {
-  arrow: true,
-  pagination: true,
-  grouping: false,
-  loop: true,
-  preview: false,
-  columns: 4,
-  duration: 1000,
-  align: "center",
-});
-sliderm.on("slide.start", () => {
-  console.log("Just starting to slide!");
+
+function circleBtn() {
+  const updateCarousel = document.querySelectorAll(
+    ".update-carousel .carousel .carousel-box"
+  );
+  const updateCircle = document.querySelectorAll(
+    ".update-carousel .circles .circle"
+  );
+  let currentIndex = 0;
+
+  updateCircle[currentIndex].addEventListener("click", function () {
+    updateCircle[currentIndex].classList.remove("active-circle");
+    currentIndex = (currentIndex + 1) % updateCircle.length;
+    updateCircle[currentIndex].classList.add("active-circle");
+  });
+}
+
+circleBtn();
+
+$(document).ready(function () {
+  var owl = $("#best-vacation-carousel").owlCarousel({
+    rewind: false,
+    loop: true,
+    stagePadding: 0,
+    nav: false,
+    items: 3,
+    margin: 31,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  });
+
+  $("#prevButton").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  $("#nextButton").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
 });
 
-sliderm.on("slide.end", () => {
-  console.log("The slider is stopped.");
+$(document).ready(function () {
+  var owl = $("#book-now-carousel").owlCarousel({
+    rewind: false,
+    loop: true,
+    items: 4,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      800: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+    },
+  });
+
+  $("#prevButtonBook").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  $("#nextButtonBook").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
 });

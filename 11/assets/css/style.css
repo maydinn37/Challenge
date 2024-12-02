@@ -9,9 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1170px;
-}
+
 /*Header*/
 header {
   background-color: #fefcfb;
@@ -79,6 +77,12 @@ button {
   border: none;
   color: white !important;
 }
+.orange-btn:hover {
+  color: #fa7436 !important;
+  background-color: #fff !important;
+  border: #fa7436 !important;
+  border: 1px solid !important;
+}
 .home {
   display: flex;
   align-items: center;
@@ -123,6 +127,10 @@ span {
   border: solid 1px #fa7436;
   background-color: #fff;
   color: #fa7436;
+}
+.discover-btn:hover {
+  background-color: #fa7436;
+  color: #fff;
 }
 .search-bar {
   width: 841px;
@@ -240,6 +248,7 @@ span {
 }
 .boxs {
   display: flex;
+  max-width: 1170px;
 }
 .box {
   width: 370px;
@@ -368,7 +377,7 @@ span {
   color: #222 !important;
 }
 .selected {
-  box-shadow: 0 16px 80px 0 rgba(250, 87, 6, 0.2) !important;
+  box-shadow: 0 0 80px 0 rgba(250, 87, 6, 0.2) !important;
 }
 
 .book-now .carousel .carousel-box .book-now-div {
@@ -422,6 +431,9 @@ span {
   flex-direction: column;
   align-items: center;
 }
+#book-now-carousel {
+  max-width: 1200px;
+}
 .best-vacation {
   display: flex;
   flex-direction: column;
@@ -457,6 +469,7 @@ span {
 }
 .best-vacation .carousel {
   display: flex;
+  max-width: 1200px;
 }
 
 .best-vacation .carousel-box {
@@ -514,9 +527,7 @@ span {
   margin-left: 125px;
 }
 .best-vacation .next-previous-btn {
-  position: absolute;
-  top: 176px;
-  right: 380px;
+  margin-left: 1000px;
 }
 .best-vacation .next-previous-btn i {
   margin-left: 32px;
@@ -654,7 +665,6 @@ span {
   margin: 0 28px 0 0;
   padding: 0 0 32px;
   border-radius: 8px;
-  background-color: transparent;
   display: flex;
   flex-direction: column;
 }
@@ -760,6 +770,12 @@ span {
   right: 260px;
   z-index: 2;
 }
+.update-carousel .contact-us button:hover {
+  color: #fa7436 !important;
+  background-color: #fff !important;
+  border: #fa7436 !important;
+  border: 1px solid !important;
+}
 .update-carousel .contact-bg-circle {
   position: absolute;
   width: 480px;
@@ -802,14 +818,11 @@ footer {
   display: flex;
   background-color: #f7f8fc;
   flex-direction: column;
-  justify-content: start;
 }
 footer .row {
-  max-width: 1170px;
+  justify-content: space-around;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 378px;
   margin-top: 326px;
   margin-bottom: 165px;
 }
@@ -856,6 +869,9 @@ footer .communication p {
   line-height: 2;
   color: #666;
 }
+footer .communication {
+  margin-left: 120px;
+}
 
 footer .communication h3 {
   height: 24px;
@@ -868,8 +884,7 @@ footer .communication h3 {
 .cols {
   display: flex;
   justify-content: space-around;
-  width: 1000px;
-  margin-left: 327px;
+  margin-right: 100px;
   height: 168px;
 }
 footer .row .cols .col ul {
@@ -902,21 +917,28 @@ footer .row .cols .col h3 {
   background-color: rgba(153, 153, 153, 0.56);
   align-self: center;
 }
-footer .row .row-p {
-  width: 400px;
+footer .row2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+footer .row2 .row2-p {
   height: 24px;
   opacity: 0.8;
   font-family: "Poppins", serif;
   font-size: 16px;
   color: #666;
+  margin-left: 35px;
 }
-footer .row span {
+footer .row2 span {
   width: 180px !important;
   height: 24px !important;
   opacity: 0.8 !important;
   font-family: "Poppins", serif !important;
   font-size: 16px !important;
   color: #666 !important;
+  margin-right: 10px !important;
 }
 
 .sliderm__slide img {

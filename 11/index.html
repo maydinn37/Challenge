@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Landing</title>
+    <link rel="stylesheet" href="../../owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../../owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -113,9 +115,9 @@
         Discover our fantastic early booking discounts & start planning your
         journey.
       </p>
-      <div class="carousel">
+      <div id="book-now-carousel" class="carousel owl-carousel">
         <div class="carousel-box box1 ">
-          <div class="book-now-div"><button class="book-now-btn">Book Now</button></div>
+          
           <img src="assets/images/img1@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -135,7 +137,7 @@
           </div>
         </div>
         <div class="carousel-box box2">
-          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
+         
           <img src="assets/images/img2@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -155,7 +157,7 @@
           </div>
         </div>
         <div class="carousel-box box3 ">
-          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
+          
           <img src="assets/images/img2@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -175,7 +177,7 @@
           </div>
         </div>
         <div class="carousel-box box4">
-          <div class="book-now-div hidden"><button class="book-now-btn">Book Now</button></div>
+          
           <img src="assets/images/img4@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -196,11 +198,12 @@
         </div>
       </div>
       <div class="next-previous-btn">
-        <i
+        <i id="prevButtonBook"
           class="fa-solid fa-circle-arrow-right fa-rotate-180 fa-2xl"
           style="color: #c2c2c2"
         ></i>
         <i
+        id="nextButtonBook"
           class="fa-solid fa-circle-arrow-right fa-2xl"
           style="color: #c2c2c2"
         ></i>
@@ -218,16 +221,17 @@
         of all-inclusive offers!
       </p>
       <div class="next-previous-btn">
-        <i
+        <i id="prevButton"
           class="fa-solid fa-circle-arrow-right fa-rotate-180 fa-2xl"
           style="color: #c2c2c2"
         ></i>
         <i
+        id="nextButton"
           class="fa-solid fa-circle-arrow-right fa-2xl"
           style="color: #c2c2c2"
         ></i>
       </div>
-      <div class="carousel">
+      <div id="best-vacation-carousel" class="carousel owl-carousel">
         <div class="carousel-box box1">
           <img src="assets/images/img5@3x.png" alt="" />
           <div class="row">
@@ -321,10 +325,9 @@
       </div>
     </section>
     <section class="update-carousel">
-      
       <h2>Get update with <span>latest blog</span></h2>
       <div class="carousel">
-        <div class="carousel-box box1">
+        <div class="carousel-box box1 selected">
           <img src="assets/images/img8@3x.png" alt="" />
           <div class="box-content">
             <div class="row">
@@ -378,9 +381,10 @@
         </div>
       </div>
       <div class="circles">
-        <div class="circle"></div>
-        <div class="active-circle circle"></div>
-        <div class="circle"></div>
+        <div class="circle active-circle"></div>
+        <div class="circle "></div>
+        <div class="circle "></div>
+        <div class="circle "></div>
       </div>
       <div class="contact-us">
         <h2>Subscribe and get exclusive deals & offer</h2>
@@ -443,13 +447,13 @@
         </div>
       </div>
       <div class="line"></div>
-      <div class="row">
-        <p class="row-p">Copyright, Trabook 2022. All rights reserved.</p>
+      <div class="row2">
+        <p class="row2-p">Copyright, Trabook 2022. All rights reserved.</p>
         <span>Terms & Conditions</span>
       </div>
     </footer>
-
-    <script src="https://sliderm.com/dist/1.0.8/sliderm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="../../owl/owl.carousel.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
