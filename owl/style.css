@@ -1,0 +1,15 @@
+.owl-carousel div img {
+  width: 200px !important;
+  height: 200px !important;
+}
+.owl-nav button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+  color: red !important;
+  margin-left: 300px;
+}
+.owl-carousel {
+  max-width: 700px;
+  align-self: center;
+}
