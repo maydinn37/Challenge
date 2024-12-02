@@ -8,35 +8,7 @@ searchButtons.forEach(function (button, i) {
     searchButtonsSpan[i].classList.toggle("rotate");
   });
 });
-/*
-function bookNowCarousel() {
-  const carouselBoxBookNow = document.querySelectorAll(".book-now-div");
-  const carouselBoxBook = document.querySelectorAll(".carousel .carousel-box");
-  const bookNowNextBtn = document.querySelectorAll(
-    ".book-now .next-previous-btn i"
-  );
 
-  let currentIndex = 0;
-
-  bookNowNextBtn[1].addEventListener("click", function () {
-    carouselBoxBookNow[currentIndex].classList.add("hidden");
-    carouselBoxBook[currentIndex].classList.remove("selected");
-    currentIndex = (currentIndex + 1) % carouselBoxBookNow.length;
-    carouselBoxBookNow[currentIndex].classList.remove("hidden");
-    carouselBoxBook[currentIndex].classList.add("selected");
-  });
-  bookNowNextBtn[0].addEventListener("click", function () {
-    carouselBoxBookNow[currentIndex].classList.add("hidden");
-    carouselBoxBook[currentIndex].classList.remove("selected");
-    currentIndex =
-      (currentIndex - 1 + carouselBoxBookNow.length) %
-      carouselBoxBookNow.length;
-    carouselBoxBook[currentIndex].classList.add("selected");
-    carouselBoxBookNow[currentIndex].classList.remove("hidden");
-  });
-}
-bookNowCarousel();
-*/
 function comments() {
   let currentIndex = 0;
   const commentBox = document.querySelectorAll(
@@ -152,7 +124,7 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       800: {
         items: 3,

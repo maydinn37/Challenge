@@ -17,6 +17,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 45px;
+  width: 100%;
   padding-bottom: 120px;
 }
 header nav {
@@ -88,6 +89,7 @@ button {
   align-items: center;
   margin-top: 32px;
   justify-content: space-around;
+  width: 100%;
 }
 
 figure .section-one {
@@ -99,6 +101,7 @@ figure .section-one {
   height: 585px;
   margin-left: 40px;
   padding-top: 96px;
+  width: 95%;
 }
 .content-home h1 {
   font-family: "Volkhov", serif;
@@ -111,7 +114,6 @@ span {
   color: #fa7436;
 }
 .content-home p {
-  width: 497px;
   height: 120px;
   flex-grow: 0;
   margin: 32px 24px 64px 0;
@@ -211,6 +213,7 @@ span {
   background-color: #f7f8fc;
   padding-top: 120px;
   padding-bottom: 125px;
+  width: 100%;
 }
 .about-title {
   display: flex;
@@ -219,7 +222,6 @@ span {
   margin-bottom: 64px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .about-box h2 {
   margin: 0 0 24px;
@@ -301,6 +303,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .book-now h2 {
   text-align: center;
@@ -440,6 +443,7 @@ span {
   align-items: center;
   position: relative;
   margin-top: 120px;
+  width: 100%;
 }
 .background-best-vacation {
   position: absolute;
@@ -541,6 +545,7 @@ span {
   padding-top: 120px;
   padding-bottom: 208px;
   position: relative;
+  width: 100%;
 }
 
 .comments-parts .content {
@@ -675,6 +680,7 @@ span {
   padding-top: 120px;
   padding-bottom: 379px;
   position: relative;
+  width: 100%;
 }
 .update-carousel h2 {
   font-family: "Volkhov", serif;
@@ -818,6 +824,7 @@ footer {
   display: flex;
   background-color: #f7f8fc;
   flex-direction: column;
+  width: 100%;
 }
 footer .row {
   justify-content: space-around;
@@ -942,7 +949,217 @@ footer .row2 span {
   margin-right: 10px !important;
 }
 
-.sliderm__slide img {
-  width: 270px !important;
-  height: 270px !important;
+@media (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  figure .section-one {
+    width: 450px;
+    object-fit: contain;
+  }
+  .search-bar {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .search-bar-content {
+    flex-direction: column;
+    margin: 0;
+  }
+  .buttons {
+    position: relative;
+    right: 190px;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .buttons button {
+    margin-bottom: 30px;
+    margin-right: 70px;
+  }
+  .content {
+    flex-direction: column;
+    position: relative;
+  }
+  .content input {
+    position: absolute;
+    top: -100px;
+    left: 70px;
+    margin-bottom: 100px;
+  }
+  .content input:first-child {
+    top: -170px;
+    left: 60px;
+  }
+  .content input:last-child {
+    top: -30px;
+  }
+  .search-bar button {
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .about {
+    position: relative;
+  }
+  .about-box h2 {
+    margin-top: 50px;
+    width: 400px;
+    align-self: center;
+  }
+  .about-box p {
+    width: 400px;
+  }
+  .boxs {
+    flex-direction: column;
+  }
+  .title-img {
+    top: 25px;
+  }
+  .book-now {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .book-now .carousel {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 120px;
+  }
+  .best-p {
+    width: 400px;
+  }
+  .best-vacation .carousel {
+    margin-left: 50px;
+  }
+  .best-vacation .next-previous-btn {
+    margin-left: 200px;
+  }
+  .background-best-vacation {
+    position: absolute;
+    right: 0px;
+    top: -80px;
+  }
+  .comments-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 307px;
+  }
+  .comments-parts .content {
+    margin-left: 0px;
+    margin-bottom: 200px;
+    padding-top: 70px;
+  }
+  .comments-parts .comments .comment-box {
+    left: -200px;
+    top: -100px;
+    width: 400px;
+    height: 270px;
+  }
+  .comment {
+    width: 350px;
+    margin: 0;
+  }
+  .full-name {
+    margin-top: 75px;
+  }
+  .comments-parts .comments .comment-box2 {
+    opacity: 0;
+  }
+  .comments-parts .comments .face-img {
+    top: -150px;
+    left: -20px;
+  }
+  .comments-bg-img {
+    left: 250px;
+    top: 20px;
+  }
+  .update-carousel h2 {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  .update-carousel .carousel {
+    flex-direction: column;
+  }
+
+  .update-carousel .carousel-box {
+    width: 270px;
+    height: 426px;
+    margin-bottom: 30px;
+  }
+  .circles {
+    opacity: 0;
+  }
+  .update-carousel .contact-us {
+    width: 400px;
+    height: 716px;
+    bottom: -280px;
+  }
+  .update-carousel .contact-us h2 {
+    width: 375px;
+  }
+  .update-carousel .contact-us input {
+    width: 380px;
+    margin: 84px 19px 0 15px;
+    padding: 9px 9px 9px 125px;
+  }
+  .update-carousel .contact-us i {
+    position: absolute;
+    bottom: 295px;
+    left: 90px;
+    z-index: 2;
+  }
+  .update-carousel .contact-us button {
+    bottom: 130px;
+    right: 135px;
+    z-index: 2;
+    background-color: #fff;
+    color: #fa7436;
+  }
+  .update-carousel .contact-us button:hover {
+    background-color: #fa7436 !important;
+    color: #fff !important;
+  }
+  .update-carousel .contact-bg-tree {
+    top: 35px;
+  }
+  footer .row {
+    flex-direction: column;
+  }
+  footer .communication .icon-circle i {
+    flex-direction: column;
+  }
+  footer .communication {
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+  .cols {
+    flex-direction: column;
+    margin-right: 0px;
+    align-items: start;
+    margin-left: 150px;
+    width: 400px;
+  }
+  .cols .col {
+    margin-top: 25px;
+  }
+  .line {
+    width: 400px;
+    margin-top: 700px;
+  }
+  footer .row2 {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .row2 .row2-p {
+    margin-left: 0px;
+  }
+  footer .row2 span {
+    margin-right: 0px !important;
+  }
 }
