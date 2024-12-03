@@ -17,7 +17,6 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 45px;
-  width: 100%;
   padding-bottom: 120px;
 }
 header nav {
@@ -107,7 +106,6 @@ figure .section-one {
   height: 585px;
   margin-left: 40px;
   padding-top: 96px;
-  width: 95%;
 }
 .content-home h1 {
   font-family: "Volkhov", serif;
@@ -156,12 +154,11 @@ span {
   flex-direction: row;
   margin-top: 36px;
 }
-.dropdown {
-  width: 700px;
-}
+
 .buttons {
   display: flex;
   justify-content: space-around;
+  right: 0 !important;
 }
 .buttons i {
   transform: rotate(90deg) !important;
@@ -703,6 +700,7 @@ span {
   font-weight: 500;
   line-height: 1.44;
   color: #222;
+  margin-left: 5px;
 }
 .update-carousel .date {
   width: 98px;
@@ -712,6 +710,7 @@ span {
   font-size: 16px;
   line-height: 1.63;
   color: #999;
+  margin-left: 5px;
 }
 
 .update-carousel .row {
@@ -1081,6 +1080,8 @@ footer .row2 span {
   }
   .boxs {
     flex-direction: column;
+    width: 400px;
+    align-items: center;
   }
   .title-img {
     top: 25px;
@@ -1096,6 +1097,9 @@ footer .row2 span {
     justify-content: center !important;
     align-items: center !important;
     margin-left: 110px;
+  }
+  #book-now-carousel {
+    max-width: 400px;
   }
   .book-now .next-previous-btn {
     margin-left: 25px;
@@ -1145,7 +1149,7 @@ footer .row2 span {
   }
   .comments-parts .comments .face-img {
     top: -150px;
-    left: -20px;
+    left: -50px;
   }
   .comments-bg-img {
     left: 250px;
@@ -1220,7 +1224,7 @@ footer .row2 span {
     align-items: start;
     margin-left: 150px;
     width: 400px;
-    margin-top: 50px;
+    margin-top: 150px;
   }
   .cols .col {
     margin-top: 25px;
