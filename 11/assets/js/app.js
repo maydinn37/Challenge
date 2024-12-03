@@ -143,3 +143,12 @@ $(document).ready(function () {
     owl.trigger("next.owl.carousel");
   });
 });
+
+function mobilNavBar() {
+  var x = document.getElementById("mobil-nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

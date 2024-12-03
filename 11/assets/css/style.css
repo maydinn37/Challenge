@@ -44,6 +44,12 @@ header nav .logo {
   height: 19px;
   margin-left: 10px;
 }
+#burger-btn {
+  display: none;
+}
+#mobil-nav {
+  display: none;
+}
 
 header nav ul {
   display: flex;
@@ -950,13 +956,72 @@ footer .row2 span {
 }
 
 @media (max-width: 600px) {
+  /*Nav-Bar BÖLÜMÜ*/
+  header nav {
+    justify-content: start;
+  }
+  #burger-btn {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 350px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .topnav {
+    width: 350px;
+  }
+  .topnav a {
+    padding: 10px 0px 5px 5px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #fa7436;
+    position: relative;
+    top: 00px;
+    right: -20px;
+    text-align: center;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header nav ul {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+  nav .orange-btn {
+    display: none;
+  }
+  /* HOME BÖLÜMÜ*/
   .home {
     display: flex;
     flex-direction: column;
   }
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+  }
+  .discover-btn {
+    margin-right: 50px !important;
+  }
 
   figure .section-one {
-    width: 450px;
+    width: 400px;
+    height: 500px;
     object-fit: contain;
   }
   .search-bar {
@@ -1021,10 +1086,16 @@ footer .row2 span {
     width: 90%;
     margin-left: 20px;
   }
+  .book-now p {
+    width: 400px;
+  }
   .book-now .carousel {
     justify-content: center !important;
     align-items: center !important;
-    margin-left: 120px;
+    margin-left: 110px;
+  }
+  .book-now .next-previous-btn {
+    margin-left: 25px;
   }
   .best-p {
     width: 400px;
@@ -1054,7 +1125,7 @@ footer .row2 span {
     padding-top: 70px;
   }
   .comments-parts .comments .comment-box {
-    left: -200px;
+    left: -210px;
     top: -100px;
     width: 400px;
     height: 270px;
@@ -1083,6 +1154,7 @@ footer .row2 span {
   }
   .update-carousel .carousel {
     flex-direction: column;
+    margin-left: 25px;
   }
 
   .update-carousel .carousel-box {
@@ -1134,7 +1206,7 @@ footer .row2 span {
   }
   footer .communication {
     margin-left: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 80px;
   }
   .cols {
     flex-direction: column;
