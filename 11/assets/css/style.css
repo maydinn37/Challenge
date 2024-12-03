@@ -1015,6 +1015,9 @@ footer .row2 span {
     height: auto;
     padding-top: 10px;
   }
+  .content-home h1 {
+    width: 400px;
+  }
   .discover-btn {
     margin-right: 50px !important;
   }
@@ -1197,6 +1200,9 @@ footer .row2 span {
   }
   .update-carousel .contact-bg-tree {
     top: 35px;
+  }
+  footer {
+    margin-top: 100px;
   }
   footer .row {
     flex-direction: column;
