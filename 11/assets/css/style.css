@@ -83,6 +83,14 @@ button {
   border: none;
   color: white !important;
 }
+.dropdown .orange-btn {
+  width: 160px;
+  height: 50px;
+  background-color: #fa7436 !important;
+  border-radius: 5px;
+  border: none;
+  color: white !important;
+}
 .orange-btn:hover {
   color: #fa7436 !important;
   background-color: #fff !important;
@@ -102,8 +110,7 @@ figure .section-one {
   height: 585px;
 }
 .content-home {
-  max-width: 521px;
-  height: 585px;
+  width: 521px;
   margin-left: 40px;
   padding-top: 96px;
 }
@@ -118,8 +125,6 @@ span {
   color: #fa7436;
 }
 .content-home p {
-  height: 120px;
-  flex-grow: 0;
   margin: 32px 24px 64px 0;
   font-family: "Poppins", serif;
   font-size: 20px;
@@ -153,12 +158,25 @@ span {
   display: flex;
   flex-direction: row;
   margin-top: 36px;
+  justify-content: center;
 }
-
+.search-bar .orange-btn {
+  margin-right: 5px;
+}
+/* .dropdown {
+  margin-left: 150px;
+} */
 .buttons {
   display: flex;
   justify-content: space-around;
+  margin-left: 25px;
   right: 0 !important;
+}
+.buttons button {
+  margin-right: 150px !important;
+}
+.buttons button:last-child {
+  margin-right: 125px !important;
 }
 .buttons i {
   transform: rotate(90deg) !important;
@@ -166,7 +184,6 @@ span {
 .content {
   display: flex;
   margin-top: 10px;
-  justify-content: space-around;
 }
 .content input {
   height: 18px;
@@ -177,13 +194,14 @@ span {
   border: none;
   outline: none;
   text-align: start;
-  margin-left: 35px;
+  margin-left: 25px;
+  margin-right: 82px;
 }
 .content input:first-child {
   width: 125px;
 }
 .content input:last-child {
-  margin-left: 30px;
+  margin-left: 19px;
 }
 .hidden {
   opacity: 0;
@@ -203,9 +221,6 @@ span {
 }
 .search-bar button span {
   color: #fa7436;
-}
-.search-bar .orange-btn {
-  margin-right: 24px;
 }
 
 .about {
@@ -1216,7 +1231,8 @@ footer .row2 span {
   }
   footer .communication {
     margin-left: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
+    margin-top: 80px;
   }
   .cols {
     flex-direction: column;
@@ -1231,7 +1247,7 @@ footer .row2 span {
   }
   .line {
     width: 400px;
-    margin-top: 700px;
+    margin-top: 300px;
   }
   footer .row2 {
     margin-top: 10px;
