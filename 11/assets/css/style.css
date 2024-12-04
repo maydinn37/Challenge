@@ -1035,6 +1035,9 @@ footer .row2 span {
   .content-home h1 {
     width: 400px;
   }
+  .content-home p {
+    width: 400px;
+  }
   .discover-btn {
     margin-right: 50px !important;
   }
@@ -1059,10 +1062,12 @@ footer .row2 span {
     right: 190px;
     flex-direction: column;
     margin-top: 0px;
+    justify-content: center;
+    align-items: center;
   }
   .buttons button {
     margin-bottom: 30px;
-    margin-right: 70px;
+    margin-right: 100px !important;
   }
   .content {
     flex-direction: column;
@@ -1235,7 +1240,7 @@ footer .row2 span {
   footer .communication {
     margin-left: 0px;
     margin-bottom: 150px;
-    margin-top: 80px;
+    margin-top: 200px;
   }
   .cols {
     flex-direction: column;
@@ -1250,7 +1255,7 @@ footer .row2 span {
   }
   .line {
     width: 400px;
-    margin-top: 300px;
+    margin-top: 500px;
   }
   footer .row2 {
     margin-top: 10px;
