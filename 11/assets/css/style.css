@@ -79,12 +79,21 @@ header nav ul li a {
   border: none;
   color: white;
   cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 .orange-btn:hover {
   color: #fa7436;
   background-color: #fff;
   border: #fa7436;
   border: 1px solid;
+}
+header .container i {
+  display: none;
+}
+#mobile-menu {
+  display: none;
 }
 
 /* Home Section */
@@ -133,6 +142,10 @@ span {
   background-color: #fff;
   color: #fa7436;
   cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.78;
 }
 .discover-btn:hover {
   background-color: #fa7436;
@@ -168,6 +181,9 @@ span {
   margin-right: 113px;
   width: 60px;
   user-select: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 .search-bar .search-bar-content .content input {
   border: none;
@@ -175,4 +191,103 @@ span {
 }
 .search-bar .orange-btn {
   margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+  /*Header*/
+  header .container {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  header nav {
+    display: none;
+  }
+  .buttons {
+    display: none;
+    align-self: center;
+  }
+  #hamburger {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 330px;
+    margin-top: -15px;
+  }
+  #mobile-menu {
+    margin-top: 50px;
+    width: 400px;
+  }
+  #mobile-menu ul {
+    list-style: none;
+  }
+  #mobile-menu ul li {
+    margin-bottom: 25px;
+    justify-self: center;
+  }
+  #mobile-menu ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /*Header*/
+
+  /* Home-Section*/
+  .home-section {
+    padding-top: 0;
+  }
+  .home-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding-top: 50px;
+  }
+  .content-home h1 {
+    font-size: 50px;
+    width: 375px;
+  }
+  .content-home p {
+    font-size: 16px;
+    width: 375px;
+    margin: 0 0px 15px 0px;
+  }
+  figure .section-one {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+  /* Home Section*/
+  /* Search-Bar*/
+  .search-bar .search-bar-header {
+    flex-direction: column;
+    padding: 25px 20px 20px 20px;
+    align-items: center;
+  }
+  .search-bar .search-bar-content {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+  }
+  .search-bar .search-bar-content input {
+    margin-bottom: 7px;
+    width: 130px;
+  }
+  .search-bar .search-bar-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .search-bar .orange-btn {
+    margin-left: 0px;
+  }
+  /* Search-Bar*/
 }
