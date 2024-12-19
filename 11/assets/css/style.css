@@ -163,7 +163,6 @@ span {
 
 .search-bar .search-bar-header {
   display: flex;
-  flex-grow: 0;
   max-width: 840px;
   padding: 45px 65px;
   border-radius: 10px;
@@ -501,6 +500,299 @@ best-vacation- Section
 /* 
 best-vacation- Section
 */
+/* 
+Comment - Section
+*/
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #f7f8fc;
+  padding-top: 120px;
+  padding-bottom: 208px;
+}
+.comments-section .container {
+  display: flex;
+  position: relative;
+}
+.comments-section .content {
+  display: flex;
+  flex-direction: column;
+}
+.comments-section .comments {
+  margin-left: 175px;
+}
+.comments-section .content h2 {
+  width: 388px;
+  height: 108px;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #222;
+}
+.comments-section .content p {
+  width: 394px;
+  height: 64px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #666;
+  margin-top: 24px;
+  margin-left: 0px;
+  margin-bottom: 32px;
+}
+.comments-section .content .next-previous-btn i {
+  margin-right: 32px;
+}
+
+.comments-section .comments .comment-box {
+  width: 504px;
+  height: 245px;
+  padding: 28px 68px 34px 34px;
+  border-radius: 10px;
+  box-shadow: 0 1.9px 3.1px 0 rgba(0, 0, 0, 0),
+    0 8.1px 6.5px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01),
+    0 38.5px 25.5px 0 rgba(0, 0, 0, 0.01), 0 64.8px 46.9px 0 rgba(0, 0, 0, 0.02),
+    0 100px 80px 0 rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin-top: 50px;
+}
+.comment {
+  width: 402px;
+  height: 96px;
+  margin: 0 0 34px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: #444;
+}
+.full-name {
+  width: 150px;
+  height: 27px;
+  margin: 55px 301px 5px 0;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+.comment-state {
+  width: 156px;
+  height: 21px;
+  margin: 5px 286px 0 0;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.comments-section .comments .face-img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  top: 0px;
+  right: 565px;
+  z-index: 3;
+  position: absolute;
+}
+
+.comments-section .comments .comment-box2 {
+  width: 504px;
+  height: 245px;
+  padding: 16px 66px 22px 34px;
+  border-radius: 10px;
+  background-color: rgba(240, 241, 245);
+  position: absolute;
+  top: 130px;
+  right: 50px;
+  z-index: 1;
+}
+.comment-box2 .comment-state,
+.comment-box2 .full-name {
+  opacity: 0.5;
+}
+.comments-bg-img {
+  width: 168.6px;
+  height: 188.1px;
+  object-fit: contain;
+  margin-left: 500px;
+  margin-top: -50px;
+}
+
+/* 
+Comment - Section
+*/
+/* 
+update-section
+*/
+.update-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-section .carousel {
+  display: flex;
+}
+.update-section .carousel-box {
+  width: 270px;
+  height: 426px;
+  margin: 0 28px 0 0;
+  padding: 0 0 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.update-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 379px;
+  position: relative;
+  width: 100%;
+}
+.update-section h2 {
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.13;
+  margin-bottom: 64px;
+}
+.update-section .update-content {
+  width: 244px;
+  height: 20px;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #222;
+  margin-left: 5px;
+}
+.update-section .date {
+  width: 98px;
+  height: 26px;
+  margin: 16px 146px 0 0;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #999;
+  margin-left: 5px;
+}
+
+.update-section .row {
+  margin-top: 24px !important;
+}
+.update-section .contact-us {
+  width: 1170px;
+  height: 416px;
+  margin: 0 0.2px 0 0;
+  border-radius: 16px;
+  background-color: #fa7436;
+  position: absolute;
+  bottom: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.update-section .contact-us h2 {
+  width: 708px;
+  height: 125px;
+  margin: 0 0 64px;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+}
+.update-section .contact-us input {
+  width: 674px;
+  height: 68px;
+  margin: 64px 19px 0 15px;
+  padding: 9px 9px 9px 22px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+  padding-left: 50px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #999;
+  z-index: 2;
+  bottom: 75px;
+}
+.update-section .contact-us i {
+  position: absolute;
+  bottom: 155px;
+  left: 265px;
+  z-index: 2;
+}
+.update-section .contact-us button {
+  position: absolute;
+  padding: 13px 26px;
+  border-radius: 8px;
+  background-color: #fa7436;
+  color: #fff;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: normal;
+  bottom: 130px;
+  right: 260px;
+  z-index: 2;
+}
+.update-section .contact-us button:hover {
+  color: #fa7436 !important;
+  background-color: #fff !important;
+  border: #fa7436 !important;
+  border: 1px solid !important;
+}
+.update-section .contact-bg-circle {
+  position: absolute;
+  width: 480px;
+  height: 361px;
+  margin: 46px 575px 0 0;
+  object-fit: contain;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+.update-section .contact-bg-tree {
+  width: 112.2px;
+  height: 113.1px;
+  margin: 0 0 293.9px 76px;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+}
+.circles {
+  display: flex;
+  bottom: 320px;
+  align-items: center;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #e5e5e5;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.active-circle {
+  width: 13px;
+  height: 13px;
+  background-color: #fa7436;
+}
+/* 
+update-section
+*/
 
 /*
 
@@ -676,5 +968,110 @@ best-vacation- Section
   }
   /* 
 best-vacation- Section
+*/
+  /* 
+Comment - Section
+*/
+  .comments-section {
+    padding-bottom: 270px;
+    padding-top: 170px;
+  }
+  .comments-section .container {
+    flex-direction: column;
+  }
+  .comments-section .content {
+    align-items: center;
+  }
+  .comments-section .content h2 {
+    width: 350px;
+    font-size: 32px;
+    margin-left: 50px;
+  }
+  .comments-section .content p {
+    width: 350px;
+  }
+  .comments-section .comments {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .comments-section .comments .comment-box {
+    margin-top: 0px;
+    width: 350px;
+  }
+  .comments-section .comments .comment-box2 {
+    width: 350px;
+    background-color: rgba(240, 241, 245);
+    position: absolute;
+    top: 375px;
+    left: 35px;
+    z-index: 1;
+    padding-left: 15px;
+  }
+  .comment {
+    width: 300px;
+    font-size: 12px;
+  }
+  .comments-bg-img {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 430px;
+    left: 220px;
+  }
+  .comments-section .comments .face-img {
+    top: 250px;
+    left: 10px;
+  }
+
+  /* 
+Comment - Section
+*/
+  /* 
+update-section
+*/
+  .update-section h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .update-section .carousel {
+    margin-left: 30px;
+  }
+  .update-section .contact-us {
+    width: 375px;
+    height: 500px;
+    display: flex;
+  }
+  .update-section .contact-us h2 {
+    width: 370px;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .update-section .contact-us input {
+    width: 340px;
+    height: 50px;
+    font-size: 14px;
+    margin: 0px;
+  }
+  .update-section .contact-us i {
+    bottom: 205px;
+    left: 30px;
+  }
+  .update-section .contact-us button {
+    padding: 7px 12px;
+    font-size: 14px;
+    bottom: 188px;
+    right: 30px;
+  }
+  .update-section .contact-bg-circle {
+    width: 350px;
+    height: 260px;
+    bottom: 0px;
+  }
+  .update-section .contact-bg-tree {
+    right: 5px;
+    top: 5px;
+  }
+  /* 
+update-section
 */
 }

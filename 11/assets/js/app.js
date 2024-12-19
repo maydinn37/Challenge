@@ -72,3 +72,26 @@ $(document).ready(function () {
     owl.trigger("next.owl.carousel");
   });
 });
+$(document).ready(function () {
+  var owl = $("#update-carousel").owlCarousel({
+    rewind: false,
+    dots: false,
+    loop: true,
+    items: 4,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      800: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+    },
+  });
+});
