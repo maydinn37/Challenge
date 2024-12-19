@@ -190,8 +190,321 @@ span {
   margin-left: 30px;
 }
 /*
+/* 
 
-! MEDİA QUERY 
+About- Section
+
+*/
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fc;
+  padding-top: 120px;
+  padding-bottom: 125px;
+}
+.about-title {
+  display: flex;
+  justify-content: center;
+  margin-left: 180px;
+}
+.about-box {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.about-box h2 {
+  margin: 0 0 24px;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #222;
+}
+.about-box h2 span {
+  color: #fa7436;
+}
+.about-box p {
+  width: 482px;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  line-height: 1.78;
+  text-align: center;
+  color: #666;
+  align-self: center;
+}
+.title-img {
+  width: 179.9px;
+  height: 130.7px;
+}
+.boxs {
+  display: flex;
+  max-width: 1170px;
+}
+.box {
+  width: 370px;
+  height: 278px;
+  margin: 40px;
+  background-color: #fff;
+  position: relative;
+}
+.box h3 {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.42;
+  color: #222;
+  margin-left: 35.5px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+.box p {
+  width: 290px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #666;
+  position: relative;
+  margin-left: 35.5px;
+  z-index: 2;
+}
+.background-1,
+.background-2 {
+  width: 370px;
+  height: 278px;
+  position: absolute;
+  z-index: 0;
+}
+.icon {
+  margin-left: 35.5px;
+  width: 41.1px;
+  height: 48px;
+  margin-top: 35px;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+/* 
+
+About- Section
+
+*/
+/* 
+
+Book- Now- Section
+
+*/
+.book-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.book-now h2 {
+  text-align: center;
+  margin: 120px 0px 24px 0px;
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.13;
+}
+.book-now p {
+  width: 433px;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #666;
+  text-align: center;
+  margin-bottom: 64px;
+  justify-self: center;
+}
+.book-now .carousel-box {
+  width: 280px;
+  height: 426px;
+  border-radius: 8px;
+  border: solid 2px rgba(102, 102, 102, 0.08);
+  background-color: #fefcfb;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  height: 20px;
+  margin-top: 30px;
+  margin-bottom: 19px;
+}
+.row .charge {
+  text-decoration: line-through;
+  color: #666;
+  width: 50px;
+  margin-right: 16px;
+}
+.row .now-charge {
+  color: #fa7436;
+  width: 52px;
+  height: 28px;
+  padding: 2px 5px;
+  border-radius: 8px;
+  background-color: #ffe7db;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: #fa7436;
+  margin-right: 16px;
+}
+.book-now .carousel .carousel-box img {
+  width: 280px;
+  height: 290px;
+}
+.city {
+  margin: 0 70px 0 16px !important;
+  font-family: "Poppins", serif !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  line-height: 1.08 !important;
+  text-align: start !important;
+  color: #222 !important;
+}
+
+.book-now .carousel .carousel-box .book-now-div {
+  width: 270px;
+  height: 290px;
+  background-color: rgba(85, 85, 85, 0.6);
+  position: absolute;
+}
+
+.Location {
+  margin-left: 16px !important;
+  margin-right: 49px !important;
+  font-family: "Poppins", serif !important;
+  font-size: 16px !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  color: #666 !important;
+  text-align: start !important;
+}
+.Location i {
+  margin-right: 3px;
+}
+.book-now .next-previous-btn {
+  margin-top: 64px;
+  margin-bottom: 120px;
+  justify-self: center;
+  margin-left: 32px;
+}
+.book-now .next-previous-btn i {
+  margin-right: 32px;
+}
+.next-previous-btn i:hover {
+  color: #fa7436 !important;
+}
+.next-previous-btn i {
+  cursor: pointer;
+}
+
+/* 
+Book- Now- Section
+*/
+
+/* 
+best-vacation- Section
+*/
+.best-vacation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.best-vacation-content {
+  display: flex;
+  justify-content: center;
+  margin-left: 105px;
+}
+.background-best-vacation {
+  width: 105px;
+  height: 81px;
+  object-fit: contain;
+}
+.best-vacation h2 {
+  text-align: center;
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.13;
+  margin-bottom: 24px;
+}
+.best-p {
+  width: 521px;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #666;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.best-vacation .carousel-box {
+  width: 370px;
+  height: 467px;
+  margin: 24px 30px 120px 0;
+  border-radius: 16px;
+  border: solid 2px rgba(102, 102, 102, 0.08);
+  background-color: #fff;
+}
+.best-vacation .carousel-box .row .carousel-location {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.08;
+  color: #222;
+  margin-left: 26px;
+  width: 160px;
+}
+.price {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #fa7436;
+  margin-left: 80px;
+}
+.best-vacation .carousel-box .row .distance {
+  height: 24px;
+  width: 150px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #666;
+  margin-left: 29px;
+}
+.best-vacation .carousel-box .row .distance i {
+  margin-right: 18px;
+}
+.best-vacation .carousel-box .row .reiting {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #666;
+  margin-left: 125px;
+}
+.best-vacation .next-previous-btn {
+  justify-self: end;
+}
+.best-vacation .next-previous-btn i {
+  margin-left: 32px;
+}
+/* 
+best-vacation- Section
+*/
+
+/*
+
+! MEDİA QUERY
 
 */
 @media (max-width: 600px) {
@@ -292,4 +605,76 @@ span {
     margin-left: 0px;
   }
   /* Search-Bar*/
+  /* 
+About- Section
+*/
+  .about-section .about-title {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-box {
+    align-items: center;
+  }
+  .about-box h2 {
+    width: 375px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .about-box p {
+    width: 375px;
+    font-size: 16px;
+  }
+  .boxs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 
+About- Section
+*/
+
+  /* 
+Book - Now -Section
+*/
+  .book-now h2 {
+    font-size: 32px;
+  }
+  .book-now p {
+    font-size: 16px;
+    width: 375px;
+  }
+  .carousel-box {
+    justify-self: center !important;
+  }
+  /* 
+Book - Now -Section
+*/
+
+  /* 
+best-vacation- Section
+*/
+  .best-vacation-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 70px;
+  }
+  .best-vacation h2 {
+    font-size: 32px;
+  }
+  .best-p {
+    width: 375px;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .best-vacation .carousel-box {
+    margin-left: 25px;
+  }
+  .best-vacation .next-previous-btn {
+    margin-right: 20px;
+  }
+  /* 
+best-vacation- Section
+*/
 }
