@@ -16,7 +16,7 @@ async function fetchMovies(query) {
     if (data.Response === "True") {
       displayMovies(data.Search);
     } else {
-      alert(data.Error);
+      alert("Böyle Bir Film Bulunamadı...");
     }
   } catch (error) {
     console.error("Bir hata oluştu:", error);
