@@ -109,4 +109,14 @@ footer div p {
   header .search-bar button {
     width: 50px;
   }
+  footer div p {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .line {
+    width: 50px;
+    height: 1px;
+    color: black;
+    background-color: black;
+  }
 }
