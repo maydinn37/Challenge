@@ -50,3 +50,20 @@ function displayMovies(movies) {
     resultsContainer.appendChild(movieElement);
   });
 }
+async function fetchFastMovies() {
+  const apiKey = "21b58980";
+  const url = `https://www.omdbapi.com/?s=fast&apikey=${apiKey}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    if (data.Response === "True") {
+      displayMovies(data.Search);
+    }
+  } catch (error) {
+    console.error("Bir hata oluştu:", error);
+    alert("Bir hata oluştu. Lütfen daha sonra tekrar deneyin.");
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  fetchFastMovies();
+});

@@ -58,6 +58,7 @@ header .search-bar button:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  min-height: 560px;
 }
 #results div {
   width: 400px;
@@ -76,14 +77,36 @@ header .search-bar button:hover {
   text-align: center;
   margin-bottom: 15px;
 }
+footer {
+  background-color: #da8359;
+  height: 50px;
+  margin-top: 50px;
+}
+footer div {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div p {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.line {
+  width: 500px;
+  height: 1px;
+  color: black;
+  background-color: black;
+}
+
 @media (max-width: 600px) {
-}
-.container {
-  width: 400px;
-}
-header .search-bar input {
-  width: 300px;
-}
-header .search-bar button {
-  width: 50px;
+  .container {
+    width: 400px;
+  }
+  header .search-bar input {
+    width: 300px;
+  }
+  header .search-bar button {
+    width: 50px;
+  }
 }
