@@ -50,9 +50,9 @@ function displayMovies(movies) {
     resultsContainer.appendChild(movieElement);
   });
 }
-async function fetchFastMovies() {
+async function fetchHarryMovies() {
   const apiKey = "21b58980";
-  const url = `https://www.omdbapi.com/?s=fast&apikey=${apiKey}`;
+  const url = `https://www.omdbapi.com/?s=harry+potter&apikey=${apiKey}`;
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -65,5 +65,5 @@ async function fetchFastMovies() {
   }
 }
 document.addEventListener("DOMContentLoaded", function () {
-  fetchFastMovies();
+  fetchHarryMovies();
 });
