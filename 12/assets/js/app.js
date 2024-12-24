@@ -1,9 +1,23 @@
+const searchButton = document.querySelector(".search-button");
+const searchInput = document.querySelector(".search-bar input");
+
 document.querySelector(".search-button").addEventListener("click", function () {
   const query = document.querySelector(".search-bar input").value;
   if (query) {
     fetchMovies(query);
   } else {
     alert("Lütfen bir film ismi girin...");
+  }
+});
+
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    const query = searchInput.value;
+    if (query) {
+      fetchMovies(query);
+    } else {
+      alert("Lütfen bir film ismi girin...");
+    }
   }
 });
 
